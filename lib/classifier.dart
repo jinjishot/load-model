@@ -50,7 +50,7 @@ class Classifier {
       convertedImage = image_lib.copyRotate(convertedImage, 270);
       convertedImage = image_lib.flipHorizontal(convertedImage);
     }
-    inputImage = TensorImage(TfLiteType.float32);
+    inputImage = TensorImage(TfLiteType.float32); //float32
     inputImage.loadImage(convertedImage);
     inputImage = getProcessedImage();
 
